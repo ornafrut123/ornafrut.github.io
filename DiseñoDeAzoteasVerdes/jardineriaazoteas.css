@@ -1,0 +1,183 @@
+
+body {
+  background-color: #849e7a; /* Cambia el color de fondo según tu preferencia */
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  color: rgba(48, 71, 39, 0.685);
+}
+.container {
+  color: #050505;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centra los elementos en el contenedor */
+    padding: 20px;
+  }
+  h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+}
+/* Sección de productos */
+.productos {
+  padding: 50px 20px;
+  margin-top: 10px;
+}
+
+  .producto {
+    width: calc(25% - 20px); /* Ajusta el ancho de cada producto para 4 columnas */
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .producto img {
+    width: 300px; /* Establece un ancho fijo para todas las imágenes */
+    height: 300px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    border-radius: 0px;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente dentro de su contenedor */
+}
+  /* Estilos del modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #detalle-imagen {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-item1 {
+    text-align: center;
+    width: 300px; /* Ancho del contenedor del producto */
+    margin-bottom: 30px;/* Margen inferior entre productos */
+    background-color: #7ac068;/* Color de fondo del contenedor del producto */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* Sombra suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color:#2fbd47; /* Cambia el color del botón según sea necesario */
+    color: #ffffff; /* Cambia el color del texto del botón según sea necesario */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.boton:hover {
+    color: #0a8a25;
+    background-color: #ffffff; /* Cambia el color de fondo del botón al pasar el cursor */
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #6d7b5b; /* Cambia el color de fondo para pantallas pequeñas si lo deseas */
+    /* Puedes agregar más estilos específicos para pantallas pequeñas aquí */
+  }
+
+header {
+  /* Cambia los estilos del header para pantallas pequeñas aquí */
+  padding: 10px; /* Ejemplo: reducir el padding */
+  font-size: 14px; /* Ejemplo: cambiar el tamaño de la fuente */
+  color: rgba(48, 71, 39, 0.9); /* Ejemplo: cambiar el color del texto */
+}.container {
+  /* Cambia los estilos del contenedor para pantallas pequeñas aquí */
+  flex-direction: column; /* Ejemplo: cambiar a diseño de columna */
+  align-items: center; /* Ejemplo: centrar los elementos en la columna */
+  padding: 10px; /* Ejemplo: reducir el padding */
+}
+h1 {
+  /* Cambia los estilos del h1 para pantallas pequeñas aquí */
+  font-size: 18px; /* Ejemplo: cambiar el tamaño de la fuente */
+  margin-top: 10px; /* Ejemplo: reducir el margen superior */
+}
+.productos {
+  /* Cambia los estilos de .productos para pantallas pequeñas aquí */
+  padding: 30px 10px; /* Ejemplo: reducir el padding */
+  margin-top: 5px; /* Ejemplo: reducir el margen superior */
+}
+.producto {
+  /* Cambia los estilos de .producto para pantallas pequeñas aquí */
+  width: calc(100% - 40px); /* Ejemplo: hacer que cada producto ocupe todo el ancho */
+  margin-bottom: 10px; /* Ejemplo: reducir el margen inferior */
+  padding: 15px; /* Ejemplo: reducir el padding */
+}
+.producto img {
+  /* Cambia los estilos de la imagen para pantallas pequeñas aquí */
+  width: 100%; /* Hacer que la imagen ocupe el ancho completo del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 8px; /* Ejemplo: redondear las esquinas de la imagen */
+  margin: 0; /* Eliminar el margen para mejor ajuste */
+}
+.modal {
+  /* Cambia los estilos del modal para pantallas pequeñas aquí */
+  padding: 10px; /* Ejemplo: añadir padding para evitar que el contenido toque los bordes */
+}
+.close {
+  color: #fff; /* Ejemplo: cambiar el color para mejor visibilidad en pantallas pequeñas */
+  font-size: 24px; /* Reducir el tamaño de la fuente para pantallas más pequeñas */
+  /* Ajusta más propiedades si es necesario, como padding o margin */
+}
+.close:focus {
+  color: #fff; /* Ejemplo: cambiar el color del texto para mejor visibilidad en pantallas pequeñas */
+  outline: none; /* Eliminar el contorno predeterminado del enfoque */
+  /* Puedes ajustar otras propiedades si es necesario */
+}
+#detalle-imagen {
+  /* Cambia los estilos de #detalle-imagen para pantallas pequeñas aquí */
+  border-radius: 5px; /* Ejemplo: reducir el radio de bordes para pantallas pequeñas */
+  /* Puedes ajustar otras propiedades si es necesario */
+}
+.product-item1 {
+  width: 100%; /* Hacer que el contenedor ocupe todo el ancho disponible */
+  margin-bottom: 20px; /* Reducir el margen inferior para pantallas pequeñas */
+  border-radius: 3px; /* Reducir el radio de bordes para pantallas pequeñas */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Reducir la sombra para pantallas pequeñas */
+  /* Puedes ajustar otras propiedades si es necesario */
+}
+.boton {
+  padding: 8px 15px; /* Reducir el padding para botones más pequeños */
+  margin: 5px; /* Reducir el margen para mejor ajuste en pantallas pequeñas */
+  font-size: 16px; /* Reducir el tamaño de la fuente para pantallas más pequeñas */
+}
+.boton:hover {
+  color: #0a8a25; /* Mantener el color del texto en hover para pantallas pequeñas */
+  background-color: #ffffff; /* Mantener el color de fondo en hover para pantallas pequeñas */
+  /* Puedes ajustar otras propiedades si es necesario */
+}
+}
