@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrnaFrut</title>
+    <link rel="stylesheet" href="index.css">
+   
+
+</head>
+
+<body>
+</head>
+<body>
+    <header>
+        <div class="logo">
+           
+            <img src="images/logo1.png" alt="Imagen sin fondo">
+          
+        </div>
+       <div class="img">   
+        <h1>ORNAFRUT</h1>
+        <h5>Siembra Vida ,Planta un Árbol</h>
+        </div>
+    </header>
+    <nav>
+        <a href="#quienessomos">Quiénes Somos</a>
+        <a href="#variedad">Variedad de Plantas</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contactanos">Contáctanos</a>
+        <form id="search-form" onsubmit="return highlightSearch();">
+            <input type="text" id="search-input" placeholder="Buscar" style="margin-left: 20px; padding: 5px;">
+            <input type="submit" value="Buscar">
+            <input type="reset" value="Limpiar" onclick="clearHighlight();"> <!-- Botón para limpiar la búsqueda -->
+        </form>
+       </nav>
+    <section  id="variedad">
+       
+    <div class="container">
+        <h2>FAMILIA DE PLANTAS</h2>
+        <div class="familia">
+            <div class=" ornato"></div>
+            <div class="frutal"> </div>
+            <div class="forestal"></div>
+            <div class="gastronomicas"></div>
+        </div>
+        <div class="familia1"> 
+                <div class="info">
+                    <h3>Ornato</h3>
+                    <a href="catalogoornato.html" class="boton">Ver más</a>
+                </div>
+                <div class="info">
+                    <h3>Frutal</h3>
+                    <a href="catalagofrutal.html" class="boton">Ver más</a>
+                </div>
+            <div class="info">
+                <h3>Forestal</h3>
+                <a href="catalogoforestal.html" class="boton">Ver más</a>
+            </div>
+            <div class="info">
+                <h3>Gastronómicas</h3>
+                <a href="catalagogastronomicas.html" class="boton">Ver más</a>
+            </div>
+        </div>
+        <section id="jardin" style="background-image: url('images/jardineriA.jpg');">
+            <div class="container">
+                <h1 class="section-title">Diseño de Jardinería</h1>
+                <div class="botones2">
+                    <a href="DiseñoDeJardineriaAmplia/jardineriaamplia.html" class="boton2">Espacios Amplios</a>
+                    <a href="DiseñoDeJardineria/jardineriareducida.html" class="boton2">Espacios Reducidos</a>
+                    <a href="DiseñoDeAzoteasVerdes/jardineriaazoteas.html" class="boton2" id="azotea-btn">Azoteas Verdes</a>
+                </div>
+                <div id="azotea-info" class="jardin-info hidden">
+                    
+                </div>
+            </div>
+        </section>
+        
+    <section id="quienessomos" class="about-section">
+        <div class="container">
+            <h2>Quiénes Somos</h2>
+            <p>Somos OrnaFrut, un vivero comprometido con la naturaleza y el bienestar de nuestros clientes. Desde nuestra fundación, hemos estado dedicados a proporcionar las mejores plantas y servicios para embellecer y mejorar tu entorno.</p>
+            <p>Nuestro equipo está formado por apasionados de la botánica y expertos en el cuidado de las plantas. Nos esforzamos por brindar atención personalizada y asesoramiento experto a cada cliente, ya sea que estén buscando una simple maceta de flores o un diseño completo de jardín.</p>
+            <p>En OrnaFrut, creemos en el poder transformador de la naturaleza y nos comprometemos a fomentar un estilo de vida más verde y sostenible. Únete a nosotros en nuestra misión de sembrar vida y plantar un árbol para un futuro más verde y próspero.</p>
+        </div>
+    </section>
+
+</div>
+
+<section id="ubicacion">
+    <h2>Ubicación</h2>
+    <p>Sucursal de San Simón,
+        Blvd.Luis Colosio #49
+        Col. Juárez, Tejupilco México  
+        C.P 51412 (Frente a la Báscula Ganadera)
+        Sucursal Km 5
+        Domicilio Conocido S/N
+        La Florida, Kilometro 5, Tejupilco México 
+        C.P 51400 (Frente a la Mueblería Estelaris)
+        .</p>
+      
+    <img id="ornafrut-img" src="images/ornafrut.jpeg" alt="Descripción de la imagen" width="600" height="450" style="border:0;">
+    <p>Para obtener indicaciones precisas para llegar al vivero desde tu ubicación, visita <a href="https://www.google.com/maps/place/Vivero+ornafrut/@18.9191355,-100.1915606,13z/data=!4m19!1m12!4m11!1m6!1m2!1s0x85cd6de1f4a9d743:0xac819610666f64b1!2sVivero+ornafrut,+Cd+Altamirano+-+Toluca+49,+Tejupilco,+51410+Tejupilco+de+Hidalgo,+M%C3%A9x.!2m2!1d-100.150361!2d18.91914!1m3!1m2!1s0x85cfcecf911bff55:0x14a1a924deba8c3d!2sVivero+Ornafrut,+Tejupilco+de+Hidalgo,+Estado+de+M%C3%A9xico!3m5!1s0x85cd6de1f4a9d743:0xac819610666f64b1!8m2!3d18.91914!4d-100.150361!16s%2Fg%2F11j798qs6t?entry=ttu" target="_blank">Haz Clic Aquí</a>.</p>
+    
+</section>
+
+<section id="contactanos">
+    <h2>Contáctanos</h2>
+    <div class="contact-info">
+        <p>Puedes encontrarnos en nuestras redes sociales:</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon" id="instagram">
+                <img src="images/r1.svg" alt="Instagram">
+            </a>
+            <a href="#" class="social-icon" id="facebook">
+                <img src="images/facebook.jpg" alt="Facebook">
+            </a>
+        </div>
+        <p>O contáctanos directamente a través de:</p>
+        <ul>
+            <li>Teléfono: <a href="tel:+123456789">+123456789</a></li>
+            <li>Correo electrónico: <a href="mailto:info@ornafrut.com">info@ornafrut.com</a></li>
+            <li>Dirección: Calle Principal, Ciudad, País</li>
+        </ul>
+    </div>
+</section>
+
+<p> </p>
+<footer>
+    <p>&copy; 2024 OrnaFrut. Todos los derechos reservados.</p>
+</footer>
+</body>
+<script src="script.js" defer></script>
+</html>

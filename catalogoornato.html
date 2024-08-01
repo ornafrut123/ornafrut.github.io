@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h5>PRODUCTOS ORNAMENTALES</h5>
+    <div class="container">
+            <h6>Plantar plantas ornamentales ayuda a embellecer espacios como jardines y parques, debido a su belleza visual, como flores coloridas y follaje atractivo, mejorando así el ambiente estético del lugar.</h6>
+           <form id="search-form" onsubmit="return highlightSearch();">
+            <input type="text" id="search-input" placeholder="Buscar" style="margin-left: 20px; padding: 5px;">
+            <input type="submit" value="Buscar">
+            <input type="reset" value="Limpiar" onclick="clearHighlight();"> <!-- Botón para limpiar la búsqueda -->
+        </form>
+         <section class="about">
+                <div class="product-gallery">
+                    <div class="product-item">
+                <img src="img/ornato1.jpg" alt="Product 5">
+                <h3>Flor de Desierto</h3>
+                <p>El precio depende del tamaño</p>
+            </div>
+            <div class="product-item">  
+                <img src="img/2.jpg" alt="Product 6">
+                <h3>Flor de Mariposa</h3>
+                <p>El precio depende del tamaño</p>
+            </div>
+            <div class="product-item">
+                <img src="img/3.jpg" alt="Product 7">
+                <h3>Echeveria</h3>
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item">       
+                         <img src="img/4.jpg" alt="Product 8">
+                <h3>Árbol de mirto magneta místico de diamante negro</h3>
+               
+                <p>El precio depende del tamaño</p>
+                
+            </div>
+            <div class="product-item"> 
+                <img src="img/5.jpg" alt="Product 7">
+                <h3>clavel chino </h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/6.jpg" alt="Product 7">
+                <h3>Brillante Día de Oro</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/7.jpg" alt="Product 7">
+                <h3>Campana de oro</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/8.jpg" alt="Product 7">
+                <h3>Bugambilia</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/9.jpg" alt="Product 7">
+                <h3>Campanilla media</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/10.jpg" alt="Product 7">
+                <h3>Gazania</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/11.jpg" alt="Product 7">
+                <h3>Rosas</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/12.jpg" alt="Product 7">
+                <h3>Geranios</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/13.jpg" alt="Product 7">
+                <h3>Hortensias</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/14.jpg" alt="Product 7">
+                <h3>Celosia plumosa</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/15.jpg" alt="Product 7">
+                <h3>Semillas de Portulaca</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/16.jpg" alt="Product 7">
+                <h3>Flor de azúcar</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/17.jpg" alt="Product 7">
+                <h3>Kalanchoe</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/18.jpg" alt="Cactus">
+                <h3>Cactus</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/21.jpg" alt="Árbol de la abundancia">
+                <h3>Árbol de la abundancia</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/22.jpg" alt="Bugambilia">
+                <h3>Bugambilia</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/23.jpg" alt="Clavel chino">
+                <h3>Clavel chino</h3>
+                
+                <p>El precio depende del tamaño</p>
+             
+            </div>
+            <div class="product-item"> 
+                <img src="img/rosa.jpg" alt="Rosas">
+                <h3>Rosas</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/25.jpg" alt="Dahila">
+                <h3>Dahila</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/26.jpg" alt="LLamarada">
+                <h3>LLamarada</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            
+            <div class="product-item"> 
+                <img src="img/27.jpg" alt="Planta de jazmin del cielo">
+                <h3>Planta de jazmin del cielo</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/28.jpg" alt="Aralia Pinta">
+                <h3>Aralia Pinta</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/29.jpg" alt="Croto Petra">
+                <h3>Croto Petra</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/30.jpg" alt="Planta de Jazmín Rojo Brasileño">
+                <h3>Planta de Jazmín Rojo Brasileño</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/31.jpg" alt=" Muñeca Drácena Roja">
+                <h3> Muñeca Drácena Roja</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+          
+            <div class="product-item"> 
+                <img src="img/33.jpg" alt="Helecho de Boston">
+                <h3>Helecho de Boston</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/34.jpg" alt=" Helecho Blechnum Silver Lady">
+                <h3> Helecho Blechnum Silver Lady</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/35.jpg" alt="Astrophytum Myriostigma">
+                <h3> Astrophytum Myriostigma</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/36.jpg" alt="Sedum Morganianum Cola De Zorro">
+                <h3>Sedum Morganianum Cola De Zorro</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/37.jpg" alt="Dalia pinnata">
+                <h3>Dalia pinnata</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/38.jpg" alt="Cactus Viejito">
+                <h3>Cactus Viejito</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+            <div class="product-item"> 
+                <img src="img/39.jpg" alt="Cactus de Navidad">
+                <h3>Cactus de Navidad</h3>
+                
+                <p>El precio depende del tamaño</p>             
+            </div>
+        </div>
+        <div class="product-item1"> 
+            <a href="index1.html" class="boton1">REGRESAR</a>
+    </div>
+   </div>
+</section>
+</body>
+</html>
